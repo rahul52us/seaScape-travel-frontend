@@ -144,7 +144,7 @@ import FileViewer from "./FilesViewer/FileViewer";
                         size="sm"
                         onClick={() => {
                           removeFile(item, index);
-                          setSelectedFile(null);
+                          setSelectedFile({ type: null, file: null });
                         }}
                         borderRadius="full"
                       />
@@ -171,8 +171,8 @@ import FileViewer from "./FilesViewer/FileViewer";
                   alignItems="center"
                   height="100%"
                 >
-                    {selectedFile.file &&
-                      renderFileComponent(selectedFile.type, selectedFile.file)}
+                    {selectedFile?.file &&
+                      renderFileComponent(selectedFile?.type, selectedFile?.file)}
                     <Flex justifyContent="flex-end" w="full" display="none">
                       <Button
                         colorScheme="red"

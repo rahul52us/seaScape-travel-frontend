@@ -275,16 +275,17 @@ const JourneyDetailsPage = observer(() => {
           mb={12}
         >
           <Box position="relative" w="100%">
-            <Box
-              id="hero-image-box"
-              w="100%"
-              minH={{ base: "280px", md: "400px" }}
-              bgImage={`url('${galleryImages[currentIndex] || ""}')`}
-              bgSize="cover"
-              bgPosition="top center"
-              bgRepeat="no-repeat"
-              transition="background-image 0.5s ease-in-out"
-            />
+            <Box id="hero-image-box" w="100%">
+              <Image
+                src={galleryImages[currentIndex] || ""}
+                alt={destination?.title || "Journey image"}
+                w="100%"
+                maxH={{ base: "350px", md: "500px" }}
+                objectFit="cover"
+                objectPosition="center"
+                transition="all 0.5s ease-in-out"
+              />
+            </Box>
             <Button
               position="absolute"
               top={4}
