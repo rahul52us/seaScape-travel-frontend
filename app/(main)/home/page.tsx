@@ -1,0 +1,42 @@
+"use client";
+import { Box } from "@chakra-ui/react";
+import { observer } from "mobx-react-lite";
+import LocationCarousel from "../../component/common/LocationCarousel/LocationCarousel";
+import ContactUs from "../../component/ContactUs/ContactUs";
+import FAQ from "../../component/FAQ/FAQ";
+import TestimonialSection from "../../component/TestimonialSection/TestimonialSection";
+import stores from "../../store/stores";
+import FloatingSocialIcons from "../../travelComponent/common/FloatingIcons/FloatingIcons";
+import TravelBentoGrid from "../../travelComponent/common/TravelBentoGrid/TravelBentoGrid";
+import ExploreEuropeCarousel from "../../travelComponent/ExploreSection/ExploreSection";
+import FeaturedDestination from "../../travelComponent/FeaturedDestination/FeaturedDestination";
+import TourPackageSection from "../../travelComponent/TourPackageSection/TourPackageSection";
+import HeroSection from "../../travelComponent/TravelHeroSection/TravelHeroSection";
+import BudgetWrapper from "./component/BudgetWrapper/BudgetWrapper";
+import WhyChoose from "./component/WhyChoose/WhyChoose";
+
+const Home = observer(() => {
+  const {locationStore : {location}} = stores
+  return (
+    <Box bg="brand.200">
+      <HeroSection />
+      <TourPackageSection />
+      <TravelBentoGrid />
+      {/* <LocationCarousel locations={location?.data || []}/> */}
+      {/* <BudgetWrapper /> */}
+      <ExploreEuropeCarousel />
+      {/* <SightseeingList /> */}
+      <TestimonialSection />
+      {/* <WhyChoose /> */}
+      {/* <FeaturedDestination /> */}
+      {/* <TransfersEurailSection /> */}
+      {/* <FAQ /> */}
+      {/* <Box>
+        <ContactUs />
+      </Box> */}
+      <FloatingSocialIcons/>
+    </Box>
+  );
+})
+
+export default Home

@@ -1,0 +1,61 @@
+"use client";
+import { Flex } from "@chakra-ui/react";
+import React, { useMemo } from "react";
+import { observer } from "mobx-react-lite";
+import stores from "../../../../../store/stores";
+import NavItem from "../element/NavItem";
+import { formatTitle } from "../../../../../config/utils/function";
+
+interface NavItemType {
+  title: string;
+  link?: string;
+  subItems?: { title: string; link: string }[];
+}
+interface NavItemsLayoutProps {
+  onClose?: () => void;
+  isScrolled?: boolean;
+}
+
+const NavItemsLayout: React.FC<NavItemsLayoutProps> = observer(({ onClose, isScrolled }) => {
+  const { locationStore: { location } } = stores;
+
+  // Construct nav items dynamically with unique destinations
+  const dynamicNavItems: NavItemType[] = useMemo(() => {
+    const uniqueDestinations = Array.from(
+      new Set(location.data?.map((dest: { name: string }) => dest.name))
+    ).map((uniqueDest: any) => ({
+      title: formatTitle(uniqueDest),
+      link: `/destinations/${uniqueDest?.split(' ').join('-')}`,
+    }));
+
+
+    return [
+      { title: "Home", link: "/" },
+      { title: "About Us", link: "/about-us" },
+      {
+        title: "Upcoming Journeys",
+        subItems: uniqueDestinations,
+      },
+      // { title: "Group Tour", link: '/groupTour' },
+      // { title: "Blogs", link: "/blogs" },
+      // { title: "Testimonials", link: "/testimonials" },
+      { title: "Join Us", link: "/contact-us" },
+    ];
+  }, [location.data]);
+
+  return (
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      gap={{ base: 4, md: 6 }}
+      alignItems={{ base: "center", md: "center" }}
+      justifyContent="center"
+      wrap={{ base: "wrap", md: "nowrap" }}
+    >
+      {dynamicNavItems.map((item) => (
+        <NavItem item={item} key={item.title} onClose={onClose} isScrolled={isScrolled} />
+      ))}
+    </Flex>
+  );
+});
+
+export default NavItemsLayout;
