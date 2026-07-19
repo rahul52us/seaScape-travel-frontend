@@ -25,7 +25,7 @@ const NavItemsLayout: React.FC<NavItemsLayoutProps> = observer(({ onClose, isScr
       new Set(location.data?.map((dest: { name: string }) => dest.name))
     ).map((uniqueDest: any) => ({
       title: formatTitle(uniqueDest),
-      link: `/destinations/${uniqueDest?.split(' ').join('-')}`,
+      link: `/journeys/${uniqueDest?.split(' ').join('-')}`,
     }));
 
 
