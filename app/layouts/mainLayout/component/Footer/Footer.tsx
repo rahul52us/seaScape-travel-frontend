@@ -15,6 +15,7 @@ import { observer } from "mobx-react-lite";
 import NextLink from "next/link";
 import React, { useEffect, useState } from "react";
 import stores from "../../../../store/stores";
+import { formatTitle } from "../../../../config/utils/function";
 
 // ─── SVG Icons ───────────────────────────────────────────────────
 // All icons now use stroke="#D4A843" where appropriate
@@ -238,6 +239,14 @@ export const Footer: React.FC = observer(() => {
         destinationStore: { destination },
         locationStore: { location },
     } = stores;
+
+    const uniqueDestinations = Array.from(
+          new Set(location.data?.map((dest: { name: string }) => dest.name))
+        ).map((uniqueDest: any) => ({
+          title: formatTitle(uniqueDest),
+          link: `/journeys/${uniqueDest?.split(' ').join('-')}`,
+        }));
+
     const [destinationData, setDestinationsData] = useState([]);
 
     useEffect(() => {
@@ -380,11 +389,11 @@ export const Footer: React.FC = observer(() => {
                     <VStack align={{ base: "center", md: "flex-start" }} spacing={0}>
                         <SectionHeading>DESTINATIONS</SectionHeading>
                         <VStack align={{ base: "center", md: "flex-start" }} spacing={2.5}>
-                            {destinations.map((item) => (
+                            {uniqueDestinations.map((item,index:any) => (
                                 <Link
-                                    key={item}
+                                    key={index}
                                     as={NextLink}
-                                    href={`/destinations/${item.toLowerCase()}`}
+                                    href={item.link}
                                     color="rgba(245,237,216,0.75)"
                                     fontSize="14px"
                                     fontWeight="300"
@@ -392,7 +401,7 @@ export const Footer: React.FC = observer(() => {
                                     _hover={{ color: "#D4A843", textDecoration: "none" }}
                                     transition="color 0.2s"
                                 >
-                                    {item}
+                                    {item.title}
                                 </Link>
                             ))}
                         </VStack>
