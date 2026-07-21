@@ -413,31 +413,34 @@ const TourPackageSection = () => {
           </Text>
         </VStack>
 
-        {/* ── Steps Grid ── */}
-        <Box position="relative">
-          <TimelineConnector />
+        <Box maxW="1120px" mx="auto">
+          {/* ── Steps Grid ── */}
+          <Box position="relative">
+            <TimelineConnector />
 
-          <Flex
-            as={motion.div}
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            justify="center"
-            align="flex-start"
-            gap={{ base: 4, sm: 5, md: 5, lg: 4, xl: 6 }}
-            flexWrap="wrap"
-            position="relative"
-            zIndex={1}
-          >
-            {steps.map((step, index) => (
-              <StepCard key={step.id} step={step} index={index} />
-            ))}
-          </Flex>
+            <Flex
+              as={motion.div}
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              justify="center"
+              align="flex-start"
+              gap={{ base: 4, sm: 5, md: 5, lg: 4, xl: 6 }}
+              flexWrap="wrap"
+              position="relative"
+              zIndex={1}
+            >
+              {steps.map((step, index) => (
+                <StepCard key={step.id} step={step} index={index} />
+              ))}
+            </Flex>
+          </Box>
+
+          {/* ── Footer Banner ── */}
+          <FooterBanner />
         </Box>
 
-        {/* ── Footer Banner ── */}
-        <FooterBanner />
       </Container>
     </Box>
   );
@@ -846,10 +849,10 @@ export default TourPackageSection;
 //               <Icon as={FaHeart} color="#D4A843" w={{ base: 4, md: 5 }} h={{ base: 4, md: 5 }} />
 //               <Icon as={FaGlobe} color="#D4A843" w={{ base: 4, md: 5 }} h={{ base: 4, md: 5 }} opacity={0.6} />
 //             </HStack>
-//             <Text 
-//               fontSize={{ base: "xs", sm: "sm" }} 
-//               color="#7B1035" 
-//               opacity={0.7} 
+//             <Text
+//               fontSize={{ base: "xs", sm: "sm" }}
+//               color="#7B1035"
+//               opacity={0.7}
 //               textAlign="center"
 //               px={{ base: 2, sm: 0 }}
 //             >
