@@ -370,7 +370,7 @@ export const Footer: React.FC = observer(() => {
 
                 {/* Social Icons */}
                 <HStack gap={3} mb={10} justify={{ base: "center", md: "flex-start" }}>
-                    <SocialButton icon={InstagramIcon} href="https://instagram.com/shescape" />
+                    <SocialButton icon={InstagramIcon} href="https://www.instagram.com/shescapes_india/" />
                     <SocialButton icon={WhatsAppIcon} href="https://wa.me/919217490094" />
                     <SocialButton icon={YouTubeIcon} href="https://youtube.com/shescape" />
                     <SocialButton icon={EmailIcon} href="mailto:hello@shescapesindia.com" />
@@ -456,7 +456,7 @@ export const Footer: React.FC = observer(() => {
                         <SectionHeading>GET IN TOUCH</SectionHeading>
                         <VStack align={{ base: "center", md: "flex-start" }} spacing={2.5}>
                             <ContactLine icon={LocationIcon}>
-                                Gurugram, Haryana<br />India
+                                Khasra No. 328, Near Peer Baba, Main Sultanpur Market, Sultanpur, New Delhi- 110030<br />India
                             </ContactLine>
                             <ContactLine icon={PhoneIcon}>+91-9217490094</ContactLine>
                             <ContactLine icon={MailIconSmall}>hello@shescapesindia.com</ContactLine>
@@ -534,7 +534,7 @@ export const Footer: React.FC = observer(() => {
                             fontWeight="300"
                             fontFamily="'AVENIR', 'Avenir', sans-serif"
                         >
-                            © {new Date().getFullYear()} SHEscape. All rights reserved.
+                            © {new Date().getFullYear()} Shescapes. All rights reserved.
                         </Text>
                         <Text
                             fontSize="12px"

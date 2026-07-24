@@ -130,49 +130,50 @@ const TeamCarousel = observer(() => {
                 transition="transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)"
               >
                 {/* Front */}
+                {/* Front – full image with name overlay */}
                 <Box
                   position="absolute"
                   inset="0"
                   style={{ backfaceVisibility: "hidden" }}
-                  bg={colors.white}
                   borderRadius="2xl"
+                  overflow="hidden"
                   boxShadow="0 4px 20px rgba(123,16,53,0.06)"
                   border="1px solid rgba(212,168,67,0.1)"
-                  p={6}
-                  display="flex"
-                  flexDirection="column"
-                  alignItems="center"
-                  justifyContent="center"
-                  textAlign="center"
                 >
-                  <Avatar
-                    size="2xl"
-                    name={member.name}
+                  <Image
                     src={member.avatar}
-                    bg={colors.accent}
-                    color={colors.white}
-                    mb={4}
-                    border="3px solid"
-                    borderColor={colors.accent}
+                    alt={member.name}
+                    w="100%"
+                    h="100%"
+                    objectFit="cover"
                   />
-                  <Heading
-                    as="h4"
-                    fontSize="lg"
-                    fontWeight="700"
-                    color={colors.primary}
-                    mb={1}
-                    fontFamily={fonts.primary}
+                  <Box
+                    position="absolute"
+                    bottom="0"
+                    left="0"
+                    right="0"
+                    p={4}
+                    bg="linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)"
                   >
-                    {member.name}
-                  </Heading>
-                  <Text
-                    fontSize="sm"
-                    fontWeight="600"
-                    color={colors.accent}
-                    fontFamily={fonts.secondary}
-                  >
-                    {member.role}
-                  </Text>
+                    <Heading
+                      as="h4"
+                      fontSize="lg"
+                      fontWeight="700"
+                      color={colors.white}
+                      mb={0}
+                      fontFamily={fonts.primary}
+                    >
+                      {member.name}
+                    </Heading>
+                    <Text
+                      fontSize="sm"
+                      fontWeight="500"
+                      color={colors.accent}
+                      fontFamily={fonts.secondary}
+                    >
+                      {member.role}
+                    </Text>
+                  </Box>
                 </Box>
 
                 {/* Back */}
@@ -522,7 +523,7 @@ const TestimonialSection = observer(() => {
                   fontSize="sm"
                   letterSpacing="0.5px"
                   transition="all 0.3s ease"
-                  onClick={() => window.open("https://wa.me/919217490094", "_blank")}
+                  onClick={() => window.open("https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ", "_blank")}
                   fontFamily={fonts.secondary}
                   _hover={{
                     bg: colors.accentHover,

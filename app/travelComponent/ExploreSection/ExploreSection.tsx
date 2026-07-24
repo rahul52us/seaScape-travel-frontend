@@ -34,82 +34,74 @@ const fonts = {
 // ─── Custom SVG Icons (maroon stroke) ──────────────────────────
 
 const WomenFirstIcon = () => (
-    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={colors.primary} strokeWidth="1.5">
-        <path d="M28 8c0 0-4-2-8 0s-6 6-6 10c0 4 2 8 6 10" strokeLinecap="round" />
-        <path d="M20 18c0 0 2 2 4 2s4-2 4-2" strokeLinecap="round" />
-        <circle cx="22" cy="16" r="1" fill={colors.primary} stroke="none" />
-        <path d="M14 12c-2 0-3 2-3 4s2 4 4 4" strokeLinecap="round" />
-        <path d="M12 10c0-2 2-3 3-2" strokeLinecap="round" />
-        <path d="M10 14c-1 0-2 1-1 2" strokeLinecap="round" />
-        <path d="M28 28c-2 4-6 6-10 6s-8-2-10-6" strokeLinecap="round" />
-        <path d="M18 34v6c0 2 2 4 4 4" strokeLinecap="round" />
+    <svg
+        width="40"
+        height="40"
+        viewBox="0 0 256 512"
+        fill={colors.primary}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M128 0c35.346 0 64 28.654 64 64s-28.654 64-64 64c-35.346 0-64-28.654-64-64S92.654 0 128 0m119.283 354.179l-48-192A24 24 0 0 0 176 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H80a24 24 0 0 0-23.283 18.179l-48 192C4.935 369.305 16.383 384 32 384h56v104c0 13.255 10.745 24 24 24h32c13.255 0 24-10.745 24-24V384h56c15.591 0 27.071-14.671 23.283-29.821z" />
     </svg>
 );
 
 const BoutiqueStaysIcon = () => (
-    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={colors.primary} strokeWidth="1.5">
-        <rect x="10" y="16" width="28" height="26" rx="2" />
-        <path d="M8 16 L24 6 L40 16" strokeLinecap="round" strokeLinejoin="round" />
-        <rect x="16" y="22" width="6" height="8" rx="1" />
-        <rect x="26" y="22" width="6" height="8" rx="1" />
-        <rect x="18" y="34" width="12" height="8" rx="1" />
-        <circle cx="24" cy="38" r="1.5" fill={colors.primary} stroke="none" />
-        <path d="M20 12 L24 9 L28 12" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+        width="40"
+        height="40"
+        viewBox="0 0 576 512"
+        fill={colors.primary}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M560 64c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16H16C7.16 0 0 7.16 0 16v32c0 8.84 7.16 16 16 16h15.98v384H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h240v-80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v80h240c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16h-16V64h16zm-304 44.8c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zm0 96c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zm-128-96c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4zM179.2 256h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4c0 6.4-6.4 12.8-12.8 12.8zM192 384c0-53.02 42.98-96 96-96s96 42.98 96 96H192zm256-140.8c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-96c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4z" />
     </svg>
 );
 
 const LiveLikeLocalIcon = () => (
-    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={colors.primary} strokeWidth="1.5">
-        <path d="M8 36 L8 20 L16 16 L24 20 L32 16 L40 20 L40 36" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M8 36 L16 32 L24 36 L32 32 L40 36" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M16 16 L16 32" strokeLinecap="round" strokeDasharray="2 2" />
-        <path d="M24 20 L24 36" strokeLinecap="round" strokeDasharray="2 2" />
-        <path d="M32 16 L32 32" strokeLinecap="round" strokeDasharray="2 2" />
-        <path d="M24 6c-3 0-5 2-5 5 0 4 5 9 5 9s5-5 5-9c0-3-2-5-5-5z" fill="none" />
-        <path d="M22 9c0-1 1-2 2-2s2 1 2 2-2 3-2 3-2-2-2-3z" fill={colors.primary} stroke="none" />
+    <svg
+        width="40"
+        height="40"
+        viewBox="0 0 512 512"
+        fill={colors.primary}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M507.31 84.69L464 41.37c-6-6-14.14-9.37-22.63-9.37H288V16c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v16H56c-13.25 0-24 10.75-24 24v80c0 13.25 10.75 24 24 24h385.37c8.49 0 16.62-3.37 22.63-9.37l43.31-43.31c6.25-6.26 6.25-16.38 0-22.63zM224 496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V384h-64v112zm232-272H288v-32h-64v32H70.63c-8.49 0-16.62 3.37-22.63 9.37L4.69 276.69c-6.25 6.25-6.25 16.38 0 22.63L48 342.63c6 6 14.14 9.37 22.63 9.37H456c13.25 0 24-10.75 24-24v-80c0-13.25-10.75-24-24-24z" />
     </svg>
 );
 
 const CommunityIcon = () => (
-    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={colors.primary} strokeWidth="1.5">
-        <path d="M18 8c0 0-1-2-3-2s-3 2-3 4 1.5 4 3 4 3-2 3-4" strokeLinecap="round" />
-        <path d="M24 6c0 0-1-2-3-2s-3 2-3 4 1.5 4 3 4 3-2 3-4" strokeLinecap="round" />
-        <path d="M30 8c0 0-1-2-3-2s-3 2-3 4 1.5 4 3 4 3-2 3-4" strokeLinecap="round" />
-        <path d="M12 18c-2 1-3 3-3 5v4" strokeLinecap="round" />
-        <path d="M18 16c-2 1-3 3-3 5v6" strokeLinecap="round" />
-        <path d="M24 14c-2 1-3 3-3 5v8" strokeLinecap="round" />
-        <path d="M30 16c2 1 3 3 3 5v6" strokeLinecap="round" />
-        <path d="M36 18c2 1 3 3 3 5v4" strokeLinecap="round" />
-        <path d="M22 4c0-1 1-2 2-2s2 1 2 2-2 3-2 3-2-2-2-3z" fill={colors.primary} stroke="none" />
+    <svg
+        width="40"
+        height="40"
+        viewBox="0 0 512 512"
+        fill={colors.primary}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M416 320h-96c-17.6 0-32-14.4-32-32s14.4-32 32-32h96s96-107 96-160-43-96-96-96-96 43-96 96c0 25.5 22.2 63.4 45.3 96H320c-52.9 0-96 43.1-96 96s43.1 96 96 96h96c17.6 0 32 14.4 32 32s-14.4 32-32 32H185.5c-16 24.8-33.8 47.7-47.3 64H416c52.9 0 96-43.1 96-96s-43.1-96-96-96zm0-256c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zM96 256c-53 0-96 43-96 96s96 160 96 160 96-107 96-160-43-96-96-96zm0 128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
     </svg>
 );
 
 const WellnessIcon = () => (
-    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={colors.primary} strokeWidth="1.5">
-        <ellipse cx="24" cy="34" rx="10" ry="4" strokeLinecap="round" />
-        <path d="M18 30c-2-2-2-5 0-7" strokeLinecap="round" />
-        <path d="M30 30c2-2 2-5 0-7" strokeLinecap="round" />
-        <path d="M20 24c0-3 2-5 4-5s4 2 4 5" strokeLinecap="round" />
-        <circle cx="24" cy="16" r="4" strokeLinecap="round" />
-        <path d="M20 12c0-2 2-3 4-3s4 1 4 3" strokeLinecap="round" />
-        <path d="M14 32c-2-2-2-6 0-8" strokeLinecap="round" />
-        <path d="M34 32c2-2 2-6 0-8" strokeLinecap="round" />
-        <path d="M16 30c-1-3 0-6 2-8" strokeLinecap="round" />
-        <path d="M32 30c1-3 0-6-2-8" strokeLinecap="round" />
+    <svg
+        width="40"
+        height="40"
+        viewBox="0 0 576 512"
+        fill={colors.primary}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M568.25 192c-29.04.13-135.01 6.16-213.84 83-33.12 29.63-53.36 63.3-66.41 94.86-13.05-31.56-33.29-65.23-66.41-94.86-78.83-76.84-184.8-82.87-213.84-83-4.41-.02-7.79 3.4-7.75 7.82.23 27.92 7.14 126.14 88.77 199.3C172.79 480.94 256 480 288 480s115.19.95 199.23-80.88c81.64-73.17 88.54-171.38 88.77-199.3.04-4.42-3.34-7.84-7.75-7.82zM287.98 302.6c12.82-18.85 27.6-35.78 44.09-50.52 19.09-18.61 39.58-33.3 60.26-45.18-16.44-70.5-51.72-133.05-96.73-172.22-4.11-3.58-11.02-3.58-15.14 0-44.99 39.14-80.27 101.63-96.74 172.07 20.37 11.7 40.5 26.14 59.22 44.39a282.768 282.768 0 0 1 45.04 51.46z" />
     </svg>
 );
 
 const SmallGroupsIcon = () => (
-    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={colors.primary} strokeWidth="1.5">
-        <circle cx="16" cy="16" r="3" strokeLinecap="round" />
-        <circle cx="32" cy="16" r="3" strokeLinecap="round" />
-        <circle cx="24" cy="12" r="3" strokeLinecap="round" />
-        <path d="M13 22c-2 1-3 3-3 5" strokeLinecap="round" />
-        <path d="M19 20c-1 1-2 3-2 5" strokeLinecap="round" />
-        <path d="M24 18c0 2-1 4-1 6" strokeLinecap="round" />
-        <path d="M29 20c1 1 2 3 2 5" strokeLinecap="round" />
-        <path d="M35 22c2 1 3 3 3 5" strokeLinecap="round" />
-        <path d="M22 8c0-1 1-2 2-2s2 1 2 2-2 3-2 3-2-2-2-3z" fill={colors.primary} stroke="none" />
+    <svg
+        width="40"
+        height="40"
+        viewBox="0 0 640 640"
+        fill={colors.primary}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M320 64C355.3 64 384 92.7 384 128C384 163.3 355.3 192 320 192C284.7 192 256 163.3 256 128C256 92.7 284.7 64 320 64zM416 376C416 401 403.3 423 384 435.9L384 528C384 554.5 362.5 576 336 576L304 576C277.5 576 256 554.5 256 528L256 435.9C236.7 423 224 401 224 376L224 336C224 283 267 240 320 240C373 240 416 283 416 336L416 376zM160 96C190.9 96 216 121.1 216 152C216 182.9 190.9 208 160 208C129.1 208 104 182.9 104 152C104 121.1 129.1 96 160 96zM176 336L176 368C176 400.5 188.1 430.1 208 452.7L208 528C208 529.2 208 530.5 208.1 531.7C199.6 539.3 188.4 544 176 544L144 544C117.5 544 96 522.5 96 496L96 439.4C76.9 428.4 64 407.7 64 384L64 352C64 299 107 256 160 256C172.7 256 184.8 258.5 195.9 262.9C183.3 284.3 176 309.3 176 336zM432 528L432 452.7C451.9 430.2 464 400.5 464 368L464 336C464 309.3 456.7 284.4 444.1 262.9C455.2 258.4 467.3 256 480 256C533 256 576 299 576 352L576 384C576 407.7 563.1 428.4 544 439.4L544 496C544 522.5 522.5 544 496 544L464 544C451.7 544 440.4 539.4 431.9 531.7C431.9 530.5 432 529.2 432 528zM480 96C510.9 96 536 121.1 536 152C536 182.9 510.9 208 480 208C449.1 208 424 182.9 424 152C424 121.1 449.1 96 480 96z" />
     </svg>
 );
 
@@ -364,7 +356,7 @@ const ExploreSection = () => {
                                 fontWeight={600}
                                 fontFamily="'Lato', 'Avenir', sans-serif"
                                 transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
-                                onClick={() => window.open("https://wa.me/919217490094", "_blank")}
+                                onClick={() => window.open("https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ", "_blank")}
                                 _hover={{
                                     bg: "#8B2A3A",
                                     transform: "translateY(-2px)",

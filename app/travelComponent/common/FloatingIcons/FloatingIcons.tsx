@@ -24,7 +24,7 @@ const FloatingSocialIcons = () => {
         window.open('https://wa.me/9217490094', '_blank');
         break;
       case 'instagram':
-        window.open('https://www.instagram.com/cosmic_travels_official/', '_blank');
+        window.open('https://www.instagram.com/shescapes_india/', '_blank');
         break;
     }
   };
@@ -90,7 +90,7 @@ const FloatingSocialIcons = () => {
           <Box
             as="button"
             aria-label="Instagram"
-            // onClick={() => handleClick('instagram')}
+            onClick={() => handleClick('instagram')}
             _hover={{ 
               transform: 'scale(1.1) rotate(15deg)',
             }}

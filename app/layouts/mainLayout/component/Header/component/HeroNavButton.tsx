@@ -66,7 +66,7 @@ const HeroNavButton = ({ onClick }: any) => {
         py={6}
         borderRadius="full"
         transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
-        onClick={() => window.open("https://wa.me/919217490094", "_blank")}
+        onClick={() => window.open("https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ", "_blank")}
         rightIcon={<BiGroup size={20} />}
       >
         <Text as="span" letterSpacing="wide">
