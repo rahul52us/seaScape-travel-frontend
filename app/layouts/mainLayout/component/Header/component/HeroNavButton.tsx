@@ -12,7 +12,7 @@ const HeroNavButton = ({ onClick }: any) => {
       click_text: "WhatsApp Button",
     });
 
-    const phone = "9958805754";
+    const phone = "9217490094";
     const message =
       "Hi, I am interested in your travel packages. Please share more details.";
     const encodedMsg = encodeURIComponent(message);
@@ -65,8 +65,8 @@ const HeroNavButton = ({ onClick }: any) => {
         px={6}
         py={6}
         borderRadius="full"
-        onClick={onClick}
         transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+        onClick={() => window.open("https://wa.me/919217490094", "_blank")}
         rightIcon={<BiGroup size={20} />}
       >
         <Text as="span" letterSpacing="wide">

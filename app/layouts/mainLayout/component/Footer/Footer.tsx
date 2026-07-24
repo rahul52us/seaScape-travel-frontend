@@ -371,9 +371,9 @@ export const Footer: React.FC = observer(() => {
                 {/* Social Icons */}
                 <HStack gap={3} mb={10} justify={{ base: "center", md: "flex-start" }}>
                     <SocialButton icon={InstagramIcon} href="https://instagram.com/shescape" />
-                    <SocialButton icon={WhatsAppIcon} href="https://wa.me/919876543210" />
+                    <SocialButton icon={WhatsAppIcon} href="https://wa.me/919217490094" />
                     <SocialButton icon={YouTubeIcon} href="https://youtube.com/shescape" />
-                    <SocialButton icon={EmailIcon} href="mailto:hello@shescape.in" />
+                    <SocialButton icon={EmailIcon} href="mailto:hello@shescapesindia.com" />
                 </HStack>
 
                 {/* ─── DIVIDER ─── */}
@@ -458,8 +458,8 @@ export const Footer: React.FC = observer(() => {
                             <ContactLine icon={LocationIcon}>
                                 Gurugram, Haryana<br />India
                             </ContactLine>
-                            <ContactLine icon={PhoneIcon}>+91 98765 43210</ContactLine>
-                            <ContactLine icon={MailIconSmall}>hello@shescape.in</ContactLine>
+                            <ContactLine icon={PhoneIcon}>+91-9217490094</ContactLine>
+                            <ContactLine icon={MailIconSmall}>hello@shescapesindia.com</ContactLine>
                             <ContactLine icon={ClockIcon}>Mon - Sat: 10 AM - 7 PM</ContactLine>
                         </VStack>
                     </VStack>

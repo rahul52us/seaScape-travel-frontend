@@ -134,7 +134,7 @@ const Page: React.FC = () => {
       title: 'Experience the Journey',
       icon: FaMountain,
       description:
-        'Once the trip begins, all you need to do is enjoy the experience. Your journey includes thoughtfully selected accommodations, carefully planned itineraries, authentic local experiences, and the support of your Experience Lead throughout the trip.',
+        'Once the trip begins, all you need to do is enjoy the experience. Your journey includes thoughtfully selected accommodations, carefully planned itineraries, authentic local experiences, and the support of your Experience Host throughout the trip.',
       list: [],
       footer:
         "You'll discover beautiful destinations, meaningful conversations, hidden gems, local culture, and moments you'll remember long after the journey ends. Because at SHEscapes, we believe travel is about much more than checking destinations off a list.",
@@ -297,9 +297,9 @@ const Page: React.FC = () => {
 
                 {step.list.length > 0 && (
                   <Box bg={colors.bg} p={5} borderRadius="md" mb={4}>
-                    <Text fontWeight={600} fontFamily={fonts.secondary} color={colors.primary} mb={2}>
+                    {/* <Text fontWeight={600} fontFamily={fonts.secondary} color={colors.primary} mb={2}>
                       Includes:
-                    </Text>
+                    </Text> */}
                     <UnorderedList
                       spacing={2}
                       pl={4}

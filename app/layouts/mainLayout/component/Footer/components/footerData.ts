@@ -36,8 +36,8 @@ export const footerData = {
     ]
   },
   contactInfo: {
-    phone: "+91 - 9958 805 754",
-    email: "hello@cosmictravels.in",
+    phone: "+91 - 9217490094",
+    email: "hello@shescapesindia.com",
     address: "Khasra No. 328, Near Peer Baba, Main Sultanpur Market, Sultanpur, New Delhi- 110030"
   },
   sections: [

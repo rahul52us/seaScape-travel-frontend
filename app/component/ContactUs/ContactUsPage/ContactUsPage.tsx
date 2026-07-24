@@ -26,9 +26,9 @@ const ContactUsPage = () => {
           <Box fontFamily="'AVENIR', 'Avenir', 'Helvetica Neue', sans-serif">
             Let&apos;s craft your perfect journey together! Reach out to our travel
             experts
-            <Text as="span" color={gold} fontWeight="semibold" mx={1.5}>
+            {/* <Text as="span" color={gold} fontWeight="semibold" mx={1.5}>
               24/7
-            </Text>
+            </Text> */}
             for personalized assistance.
           </Box>
         }

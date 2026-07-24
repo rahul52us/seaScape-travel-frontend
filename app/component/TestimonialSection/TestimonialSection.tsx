@@ -522,6 +522,7 @@ const TestimonialSection = observer(() => {
                   fontSize="sm"
                   letterSpacing="0.5px"
                   transition="all 0.3s ease"
+                  onClick={() => window.open("https://wa.me/919217490094", "_blank")}
                   fontFamily={fonts.secondary}
                   _hover={{
                     bg: colors.accentHover,

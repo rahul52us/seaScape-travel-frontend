@@ -46,7 +46,7 @@ const JoinCommunitySection = () => {
 
           <Box mt={6} ml={{ lg: -4 }}>
             <Image
-              src="https://media.istockphoto.com/id/1217093906/photo/womens-hand-typing-on-mobile-smartphone-live-chat-chatting-on-application-communication.jpg?s=2048x2048&w=is&k=20&c=5ruD84xHuW8x0d8W1uJK63UEbe4f-gGhgcY0RXp5Y-c="
+              src="https://media.istockphoto.com/id/1768459570/photo/multicultural-group-of-women-stacking-hands-together-female-community-concept-with-different.jpg?s=612x612&w=0&k=20&c=DiL_Z2_OJUB9-7bhxwW7t5vuB6XMvYZNPiQLFlCy4Wo="
               alt="Community Image"
               borderRadius="2xl"
               border={`2px solid ${gold}`}
@@ -63,10 +63,7 @@ const JoinCommunitySection = () => {
             maxW="500px"
             fontFamily="'AVENIR', 'Avenir', 'Helvetica Neue', sans-serif" // Body font
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim a a tr veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+            Join the Shescapes community—a travel space created exclusively for women who love to explore, connect, and create unforgettable memories. Whether you're a solo traveler, a first-time adventurer, or someone looking for like-minded companions, Shescapes offers safe, fun, and thoughtfully curated girls-only tours. Discover new destinations, build lasting friendships, and experience the joy of traveling with a supportive community of inspiring women.
           </Text>
 
           {/* Button placeholder – gold bg, maroon text, AVENIR font */}
@@ -109,10 +106,7 @@ const JoinCommunitySection = () => {
               lineHeight="1.7"
               fontFamily="'AVENIR', 'Avenir', 'Helvetica Neue', sans-serif"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim a a tr veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              Join the Shescapes community—a travel space created exclusively for women who love to explore, connect, and create unforgettable memories. Whether you're a solo traveler, a first-time adventurer, or someone looking for like-minded companions, Shescapes offers safe, fun, and thoughtfully curated girls-only tours. Discover new destinations, build lasting friendships, and experience the joy of traveling with a supportive community of inspiring women.
             </Text>
             <Box mt={6}>
               {/* 
@@ -131,7 +125,7 @@ const JoinCommunitySection = () => {
           {/* Image */}
           <Box mt={4}>
             <Image
-              src="https://media.istockphoto.com/id/1217093906/photo/womens-hand-typing-on-mobile-smartphone-live-chat-chatting-on-application-communication.jpg?s=2048x2048&w=is&k=20&c=5ruD84xHuW8x0d8W1uJK63UEbe4f-gGhgcY0RXp5Y-c="
+              src="https://media.istockphoto.com/id/1768459570/photo/multicultural-group-of-women-stacking-hands-together-female-community-concept-with-different.jpg?s=612x612&w=0&k=20&c=DiL_Z2_OJUB9-7bhxwW7t5vuB6XMvYZNPiQLFlCy4Wo="
               alt="Community Image"
               w={"80%"}
               mx={"auto"}

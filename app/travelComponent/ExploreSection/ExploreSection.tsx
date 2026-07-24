@@ -364,6 +364,7 @@ const ExploreSection = () => {
                                 fontWeight={600}
                                 fontFamily="'Lato', 'Avenir', sans-serif"
                                 transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+                                onClick={() => window.open("https://wa.me/919217490094", "_blank")}
                                 _hover={{
                                     bg: "#8B2A3A",
                                     transform: "translateY(-2px)",

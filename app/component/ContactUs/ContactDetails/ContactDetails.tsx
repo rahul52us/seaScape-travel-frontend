@@ -24,14 +24,14 @@ const ContactDetails = () => {
     {
       icon: FiMail,
       title: "Email",
-      content: "hello@cosmictravels.in",
-      action: () => window.open("mailto:hello@cosmictravels.in"),
-      link: "mailto:hello@cosmictravels.in",
+      content: "hello@shescapesindia.com",
+      action: () => window.open("mailto:hello@shescapesindia.com"),
+      link: "mailto:hello@shescapesindia.com",
     },
     {
       icon: FiPhone,
       title: "Phone",
-      content: "+91 9958 805 754",
+      content: "+91 9217490094",
       action: () => window.open("tel:9958805754"),
       link: "tel:9958805754",
     },
