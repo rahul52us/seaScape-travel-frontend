@@ -199,6 +199,7 @@ const Slide3 = () => {
                   height="auto"
                   borderRadius="6px"
                   transition="all 0.25s ease"
+                  onClick={() => window.open("https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ", "_blank")}
                   _hover={{
                     bg: "#6A0E2D",
                     transform: "translateY(-1px)",

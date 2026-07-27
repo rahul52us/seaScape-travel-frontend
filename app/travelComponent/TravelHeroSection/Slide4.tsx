@@ -179,6 +179,7 @@ const Slide4 = () => {
               border="1.5px solid"
               borderColor="rgba(255,255,255,0.3)"
               transition="all 0.25s ease"
+              onClick={() => window.open("https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ", "_blank")}
               _hover={{
                 borderColor: "#FFFFFF",
                 bg: "rgba(255,255,255,0.08)",

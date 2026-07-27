@@ -152,6 +152,7 @@ const Slide1 = () => {
               borderRadius="md"
               border="1.5px solid transparent"
               transition="all 0.25s ease"
+              onClick={() => window.open("https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ", "_blank")}
               // Make buttons full width on mobile, but keep them from stretching too much
               width={{ base: '100%', sm: 'auto' }}
               maxW={{ base: '280px', sm: 'none' }}

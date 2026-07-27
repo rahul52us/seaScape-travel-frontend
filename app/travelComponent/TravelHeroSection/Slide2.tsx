@@ -199,6 +199,7 @@ const Slide2 = () => {
               borderRadius="4px"
               fontWeight="400"
               fontFamily="'Inter', sans-serif"
+              onClick={() => window.open("https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ", "_blank")}
               letterSpacing="0.04em"
               _hover={{ bg: "#61162B", transform: "translateY(-1px)" }}
               transition="all 0.2s"

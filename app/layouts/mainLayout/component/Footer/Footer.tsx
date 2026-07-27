@@ -210,6 +210,7 @@ const FeatureItem = ({
 );
 
 // ─── Contact Line ─────────────────────────────────────────────
+// ✅ FIXED: added wordBreak, overflowWrap, flex="1" to handle long addresses
 const ContactLine = ({
     icon: Icon,
     children,
@@ -227,6 +228,9 @@ const ContactLine = ({
             color="rgba(245,237,216,0.75)" // cream with opacity
             lineHeight="1.6"
             fontFamily="'AVENIR', 'Avenir', 'Helvetica Neue', sans-serif"
+            wordBreak="break-word"
+            overflowWrap="anywhere"
+            flex="1"
         >
             {children}
         </Text>
@@ -380,8 +384,9 @@ export const Footer: React.FC = observer(() => {
                 <Box h="1px" bg="rgba(212,168,67,0.25)" mb={10} />
 
                 {/* ─── MIDDLE: 4 Columns ─── */}
+                {/* ✅ FIXED: changed columns to base:1 so address gets full width on mobile */}
                 <SimpleGrid
-                    columns={{ base: 2, sm: 2, md: 4 }}
+                    columns={{ base: 1, sm: 2, md: 4 }}
                     spacing={{ base: 8, md: 10 }}
                     mb={10}
                 >
@@ -451,10 +456,10 @@ export const Footer: React.FC = observer(() => {
                         </VStack>
                     </VStack>
 
-                    {/* Get in Touch */}
-                    <VStack align={{ base: "center", md: "flex-start" }} spacing={0}>
+                    {/* Get in Touch – ✅ aligned left always */}
+                    <VStack align="flex-start" spacing={0}>
                         <SectionHeading>GET IN TOUCH</SectionHeading>
-                        <VStack align={{ base: "center", md: "flex-start" }} spacing={2.5}>
+                        <VStack align="flex-start" spacing={2.5}>
                             <ContactLine icon={LocationIcon}>
                                 Khasra No. 328, Near Peer Baba, Main Sultanpur Market, Sultanpur, New Delhi- 110030<br />India
                             </ContactLine>
