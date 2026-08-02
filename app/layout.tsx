@@ -137,11 +137,11 @@ export default function RootLayout({
         <ColorModeScript initialColorMode="light" />
 
         {/* SEO */}
-        <title>Travel World</title>
+        <title>SHEscapes India | Women-Only Group Tours & Solo Travel Community</title>
 
         <meta
           name="description"
-          content="Trusted international travel company in India for romantic getaways, family holidays & group tours. Customized itineraries & complete support."
+          content="Join SHEscapes India for safe, women-only group trips across India and abroad. Curated itineraries, verified stays, experienced hosts and unforgettable experiences."
         />
 
         <meta

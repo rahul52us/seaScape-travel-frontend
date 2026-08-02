@@ -466,7 +466,7 @@ const Page: React.FC = () => {
 
               <Button
                 as="a"
-                href="https://wa.me/91XXXXXXXXX"
+                href="https://chat.whatsapp.com/CHRW9rrfNyNAecpkreh0fZ"
                 target="_blank"
                 leftIcon={<Icon as={FaWhatsapp} boxSize={5} />}
                 bg="#25D366"
@@ -488,7 +488,7 @@ const Page: React.FC = () => {
                 whiteSpace="normal"
                 wordBreak="break-word"
               >
-                WhatsApp: +91 XXXXX XXXXX
+                Join WhatsApp Community
               </Button>
             </VStack>
 

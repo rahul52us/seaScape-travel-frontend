@@ -75,7 +75,7 @@ const DashPageHeader = observer(
       <>
         <Head>
           <title>
-            {title ? `${showMainTitle ? `Edukatues | ` : ""}${title}` : metaData?.name}
+            {title ? `${showMainTitle ? `SHEscapes India | ` : ""}${title}` : metaData?.name}
           </title>
           <meta name="description" content={metaData?.description} />
           <meta name="keywords" content={metaData?.keywords} />

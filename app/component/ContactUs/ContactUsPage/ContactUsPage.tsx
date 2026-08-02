@@ -25,11 +25,10 @@ const ContactUsPage = () => {
           // Wrap the subtitle in a Box with AVENIR font
           <Box fontFamily="'AVENIR', 'Avenir', 'Helvetica Neue', sans-serif">
             Let&apos;s craft your perfect journey together! Reach out to our travel
-            experts
+            experts for personalized assistance.
             {/* <Text as="span" color={gold} fontWeight="semibold" mx={1.5}>
               24/7
             </Text> */}
-            for personalized assistance.
           </Box>
         }
         bgImage="url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')"

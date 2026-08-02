@@ -92,7 +92,7 @@ const steps = [
       "You travel, explore, laugh, heal and create memories that stay with you forever.",
     icon: FaHeart,
     image:
-      "https://res.cloudinary.com/dygvzvd6p/image/upload/v1783926677/Travel_6_ybqtjc.png",
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=500&fit=crop",
   },
   {
     id: 6,
@@ -101,7 +101,7 @@ const steps = [
       "You give back, inspire others and become a SHEscapes host or ambassador.",
     icon: FaCrown,
     image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=400&h=500&fit=crop",
   },
 ];
 
